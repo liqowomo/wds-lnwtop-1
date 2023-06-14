@@ -9,6 +9,7 @@
 --- 
 1. [fK ?](#fk-)
 2. [Comms](#comms)
+   1. [New NEXTJS](#new-nextjs)
 
 ---
 
@@ -21,3 +22,9 @@
 
 1. Commands used t get this shits running 
 
+## New NEXTJS 
+
+```sh
+pnpm dlx create-next-app@latest
+```
+## Tailwind Prettier Plugin 
