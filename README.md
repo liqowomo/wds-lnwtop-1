@@ -4,7 +4,7 @@
 ---
 
 <h1 align="center"><code>EDS-LNWTOP-1 </code></h1>
-<h2 align="center"><i> Work repo for this  </i></h2>
+<h2 align="center"><i> W1 Branch  </i></h2>
 
 --- 
 1. [fK ?](#fk-)
@@ -12,6 +12,7 @@
    1. [New NEXTJS](#new-nextjs)
    2. [Tailwind Prettier Plugin](#tailwind-prettier-plugin)
 3. [Special Note](#special-note)
+4. [Dira](#dira)
 
 ---
 
@@ -47,3 +48,8 @@ Regarding Code/Spaces Size
 Fucking bastad shit bastard , fucking github fuckers bastard, never use 2gb ram bastard motherfucker shit fucker bastard die quickly rape them and nuke them all bastard !
 
 </details>
+
+# Dira 
+
+HU | LAL
+|:--:|:--:|
