@@ -11,6 +11,7 @@
 2. [Comms](#comms)
    1. [New NEXTJS](#new-nextjs)
    2. [Tailwind Prettier Plugin](#tailwind-prettier-plugin)
+3. [Special Note](#special-note)
 
 ---
 
@@ -34,3 +35,15 @@ pnpm dlx create-next-app@latest
 pnpm i -D prettier prettier-plugin-tailwindcss
 ```
 - This will install it as devdependency
+
+# Special Note 
+
+<details>
+
+<summary>
+Regarding Code/Spaces Size
+</summary>
+
+Fucking bastad shit bastard , fucking github fuckers bastard, never use 2gb ram bastard motherfucker shit fucker bastard die quickly rape them and nuke them all bastard !
+
+</details>
