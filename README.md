@@ -10,6 +10,7 @@
 1. [fK ?](#fk-)
 2. [Comms](#comms)
    1. [New NEXTJS](#new-nextjs)
+   2. [Tailwind Prettier Plugin](#tailwind-prettier-plugin)
 
 ---
 
@@ -28,3 +29,8 @@
 pnpm dlx create-next-app@latest
 ```
 ## Tailwind Prettier Plugin 
+
+```sh 
+pnpm i -D prettier prettier-plugin-tailwindcss
+```
+- This will install it as devdependency
