@@ -11,6 +11,7 @@
 2. [Comms](#comms)
    1. [New NEXTJS](#new-nextjs)
    2. [Tailwind Prettier Plugin](#tailwind-prettier-plugin)
+   3. [Prisma Install](#prisma-install)
 3. [Special Note](#special-note)
 4. [Dira](#dira)
 
@@ -36,6 +37,15 @@ pnpm dlx create-next-app@latest
 pnpm i -D prettier prettier-plugin-tailwindcss
 ```
 - This will install it as devdependency
+
+
+## Prisma Install 
+
+This project requires PRISMA , since we are making a db using sqlite which will a single file db
+
+```sh 
+pnpm i -D prisma
+```
 
 # Special Note 
 
