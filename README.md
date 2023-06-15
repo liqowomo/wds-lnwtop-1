@@ -12,6 +12,8 @@
    1. [New NEXTJS](#new-nextjs)
    2. [Tailwind Prettier Plugin](#tailwind-prettier-plugin)
    3. [Prisma Install](#prisma-install)
+      1. [Initializing PNPM Sqlite](#initializing-pnpm-sqlite)
+   4. [Migrate scheme to sqlite](#migrate-scheme-to-sqlite)
 3. [Special Note](#special-note)
 4. [Dira](#dira)
 
@@ -46,6 +48,22 @@ This project requires PRISMA , since we are making a db using sqlite which will 
 ```sh 
 pnpm i -D prisma
 ```
+
+### Initializing PNPM Sqlite 
+
+```sh 
+pnpm dlx prisma init --datasource-provider sqlite
+```
+## Migrate scheme to sqlite
+
+This will migrate the scheme to sqlite, which means it will create a single file db, with the structure defined in the `schema.prisma` file
+
+```sh 
+pnpm dlx prisma migrate dev --name boobs
+```
+
+1. Post this command add `dev.db*` to `.gitignore`, but since you are doing learning , this and the `.env` is not being added and will be committed to fuckr 
+
 
 # Special Note 
 
