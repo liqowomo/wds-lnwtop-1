@@ -14,6 +14,7 @@
    3. [Prisma Install](#prisma-install)
       1. [Initializing PNPM Sqlite](#initializing-pnpm-sqlite)
    4. [Migrate scheme to sqlite](#migrate-scheme-to-sqlite)
+   5. [Prettier Fix](#prettier-fix)
 3. [Special Note](#special-note)
 4. [Dira](#dira)
 
@@ -72,15 +73,23 @@ pnpm dlx prisma migrate dev --name boobs
 Code recommended here is
 
 ```ts
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client'
 
 const globalForPrisma = globalThis as unknown as {
-  prisma: PrismaClient | undefined;
-};
+	prisma: PrismaClient | undefined
+}
 
-export const prisma = globalForPrisma.prisma ?? new PrismaClient();
+export const prisma = globalForPrisma.prisma ?? new PrismaClient()
 
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
+```
+
+## Prettier Fix
+
+Prettier fusk up with 1.78 so add following to tyour settigns.json
+
+```sh
+"prettier.prettierPath": "./node_modules/prettier"
 ```
 
 # Special Note
