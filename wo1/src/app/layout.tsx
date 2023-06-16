@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html lang="en">
-			<body className={`${rubi.className}  ` }>{children}</body>
+			<body className={`${rubi.className}`}>{children}</body>
 		</html>
 	)
 }
