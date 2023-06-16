@@ -15,8 +15,9 @@
       1. [Initializing PNPM Sqlite](#initializing-pnpm-sqlite)
    4. [Migrate scheme to sqlite](#migrate-scheme-to-sqlite)
    5. [Prettier Fix](#prettier-fix)
-3. [Special Note](#special-note)
-4. [Dira](#dira)
+3. [Color Designs](#color-designs)
+4. [Special Note](#special-note)
+5. [Dira](#dira)
 
 ---
 
@@ -73,7 +74,7 @@ pnpm dlx prisma migrate dev --name boobs
 Code recommended here is
 
 ```ts
-import { PrismaClient } from '@prisma/client'
+import {PrismaClient} from '@prisma/client'
 
 const globalForPrisma = globalThis as unknown as {
 	prisma: PrismaClient | undefined
@@ -91,6 +92,10 @@ Prettier fusk up with 1.78 so add following to tyour settigns.json
 ```sh
 "prettier.prettierPath": "./node_modules/prettier"
 ```
+
+# Color Designs
+
+> Get awesome color pallettes from - [`https://www.canva.com/colors/color-palettes/petal-party/`](https://www.canva.com/colors/color-palettes/petal-party/) - This is the one which is being used in this project, it is called petal-party , and you chose this because it goes well with the theme of you vscode
 
 # Special Note
 
