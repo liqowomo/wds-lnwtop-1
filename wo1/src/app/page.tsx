@@ -2,8 +2,9 @@ import {prisma} from '@/db'
 import Link from 'next/link'
 
 export default async function Home() {
+	// This is for retrieving the records 
 	const todos = await prisma.todo.findMany()
-	console.log()
+	// await prisma.todo.create({data: {title: 'fuku', complete: false}})
 
 	return (
 		<>
