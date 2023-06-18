@@ -6,16 +6,14 @@ export default function page() {
 		<>
 			<div className="mx-auto container outline p-2">
 				<Image
-					src={
-						'https://imagecdn.clips4sale.com/accounts99/2582/clip_images/LX%20Workout%20BUSTED.gif'
-					}
+					src={'https://media.tenor.com/PmJMkdZKA20AAAAC/dance-dancing.gif'}
 					alt="bbw"
-					width={800}
-					height={200}
+					width={300}
+					height={300}
 					priority={true}
 				/>
 				<p className="italic tracking-widest text-center p-2 outline">
-					&lsquo; SNIFFFFFFFFF &lsquo;
+					&lsquo; Dance &lsquo;
 				</p>
 			</div>
 			<h1>Pussy</h1>

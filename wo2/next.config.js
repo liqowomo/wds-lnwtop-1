@@ -4,7 +4,7 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'imagecdn.clips4sale.com',
+				hostname: 'media.tenor.com',
 			},
 		],
 	},
