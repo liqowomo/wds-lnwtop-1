@@ -1,9 +1,17 @@
 import {prisma} from '@/db'
 import Link from 'next/link'
 
+//A1 - Isolation of the l11
+function getTodos() {
+	return prisma.todo.findMany()
+}
+
 export default async function Home() {
-	// This is for retrieving the records 
-	const todos = await prisma.todo.findMany()
+	// This is for retrieving the records which ca aso
+
+	// This can be further broken down in a function of its own see Label A1
+	const todos = await getTodos()
+
 	// await prisma.todo.create({data: {title: 'fuku', complete: false}})
 
 	return (
