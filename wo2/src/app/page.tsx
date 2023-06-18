@@ -15,7 +15,7 @@ export default function page() {
 					placeholder="blur"
 				/>
 				<p className="italic tracking-widest text-center p-2 outline">
-					&lsquo SNIFFFFFFFFF &lsquo
+					&lsquo; SNIFFFFFFFFF &lsquo;
 				</p>
 			</div>
 			<h1>Pussy</h1>
