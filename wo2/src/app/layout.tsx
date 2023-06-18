@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import './globals.css'
 import {Dosis} from 'next/font/google'
 
@@ -11,8 +12,9 @@ export const metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html lang="en">
+			<Image src="./vooty/g.gif" alt="bbw" width={200} height={200} />
 			<body
-				className={`${dosis.className} bg-[#4C0033] text-[#F2C5E0] text-3xl`}
+				className={`${dosis.className} bg-[#4C0033] text-[#F2C5E0] text-3xl container mx-auto p-4`}
 			>
 				{children}
 			</body>

@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 export default function page() {
-	return <h1>page</h1>
+	return <h1>Pussy</h1>
 }
