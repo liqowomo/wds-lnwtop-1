@@ -5,6 +5,7 @@ export default function page() {
 	return (
 		<>
 			<Image
+				className="mx-auto"
 				src={
 					'https://imagecdn.clips4sale.com/accounts99/2582/clip_images/LX%20Workout%20BUSTED.gif'
 				}
