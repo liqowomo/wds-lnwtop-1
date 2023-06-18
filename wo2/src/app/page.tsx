@@ -14,7 +14,7 @@ export default function page() {
 					height={200}
 				/>
 				<p className="italic tracking-widest text-center p-2 outline">
-					"SNIFFFFFFFFF"
+					&quotSNIFFFFFFFFF&quot
 				</p>
 			</div>
 			<h1>Pussy</h1>
