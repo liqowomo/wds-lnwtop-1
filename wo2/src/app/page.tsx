@@ -1,7 +1,9 @@
+import {prisma} from '@/db'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function page() {
+export default async function page() {
+	const todos = await prisma.todo.findMany()
 	return (
 		<>
 			<div className="mx-auto flex flex-col outline p-2 justify-center items-center">
@@ -21,6 +23,13 @@ export default function page() {
 				<Link className="mybutton" href="/new">
 					New
 				</Link>
+			</div>
+			<div>
+				<ul className="pl-4">
+					{todos.map((todo) => (
+						<li key={todo.id}>{todo.title}</li>
+					))}
+				</ul>
 			</div>
 		</>
 	)
