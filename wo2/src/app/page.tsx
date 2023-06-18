@@ -12,7 +12,7 @@ export default function page() {
 					alt="bbw"
 					width={800}
 					height={200}
-					placeholder="blur"
+					priority={true}
 				/>
 				<p className="italic tracking-widest text-center p-2 outline">
 					&lsquo; SNIFFFFFFFFF &lsquo;
