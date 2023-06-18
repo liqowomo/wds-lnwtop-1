@@ -12,9 +12,10 @@ export default function page() {
 					alt="bbw"
 					width={800}
 					height={200}
+					placeholder="blur"
 				/>
 				<p className="italic tracking-widest text-center p-2 outline">
-					&quotSNIFFFFFFFFF&quot
+					'SNIFFFFFFFFF'
 				</p>
 			</div>
 			<h1>Pussy</h1>
