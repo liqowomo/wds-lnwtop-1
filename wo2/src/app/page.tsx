@@ -4,16 +4,24 @@ import Link from 'next/link'
 
 export default async function page() {
 	const todos = await prisma.todo.findMany()
+	// await prisma.todo.create({
+	// 	data: {
+	// 		title: 'sniffit',
+	// 		Complete: false,
+	// 	},
+	// })
 	return (
 		<>
 			<div className="mx-auto flex flex-col outline p-2 justify-center items-center">
-				<Image
-					src={'https://media.tenor.com/PmJMkdZKA20AAAAC/dance-dancing.gif'}
-					alt="bbw"
-					width={300}
-					height={300}
-					priority={true}
-				/>
+				<div className="backdrop-blur-sm skew-x-1">
+					<Image
+						src={'https://media.tenor.com/PmJMkdZKA20AAAAC/dance-dancing.gif'}
+						alt="bbw"
+						width={100}
+						height={100}
+						priority={true}
+					/>
+				</div>
 				<p className="italic tracking-widest text-center p-2 ">
 					&lsquo; Dance &lsquo;
 				</p>
