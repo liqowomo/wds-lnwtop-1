@@ -12,7 +12,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html lang="en">
 			<body
-				className={`${dosis.className} bg-[#4C0033] text-[#ff96d0] text-3xl`}
+				className={`${dosis.className} bg-[#4C0033] text-[#F2C5E0] text-3xl`}
 			>
 				{children}
 			</body>
