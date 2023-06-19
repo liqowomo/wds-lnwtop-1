@@ -2,8 +2,15 @@ import {prisma} from '@/db'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Definign the get todos function
+
+function getTodos() {
+	return prisma.todo.findMany()
+}
+
 export default async function page() {
-	const todos = await prisma.todo.findMany()
+	// This has some problems with vercel which isnt accepting this , this has to be converted into a function
+	const todos = await getTodos()
 	// await prisma.todo.create({
 	// 	data: {
 	// 		title: 'sniffit',
