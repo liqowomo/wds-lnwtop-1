@@ -1,6 +1,8 @@
+import { TodoItem } from '@/components/TodoItem'
 import {prisma} from '@/db'
 import Image from 'next/image'
 import Link from 'next/link'
+
 
 // Definign the get todos function
 
@@ -42,7 +44,7 @@ export default async function page() {
 			<div>
 				<ul className="pl-4">
 					{todos.map((todo) => (
-						<li key={todo.id}>{todo.title}</li>
+						<TodoItem key={todo.id} {...todo} />
 					))}
 				</ul>
 			</div>
