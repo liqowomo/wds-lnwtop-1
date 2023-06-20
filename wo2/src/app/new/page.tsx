@@ -1,14 +1,16 @@
 import {prisma} from '@/db'
+import {redirect} from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 
 async function createTodo(data: FormData) {
 	'use server'
-	const title = data.get('title')?.valueOf
+	const title = data.get('title')?.valueOf()
 	if (typeof title !== 'string' || title.length === 0) {
 		throw new Error('Title is required')
 	}
 	await prisma.todo.create({data: {title, Complete: false}})
+	redirect('/')
 }
 
 export default function Page() {
@@ -27,8 +29,13 @@ export default function Page() {
 					{/* Note that .. means to go back  */}
 					<Link href="..">
 						<button className="mybutton">Cancel</button>
-						<button className="mybutton">Create</button>
 					</Link>
+					<button
+						type="submit"
+						className="border border-blue-300 bg-transparent rounded px-2 py-1 focus-within:border-teal-700"
+					>
+						Create
+					</button>
 				</div>
 			</form>
 		</>

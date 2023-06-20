@@ -1,3 +1,8 @@
+/**
+ * Here the props are being defined which are used in the function below
+ */
+
+
 type TodoItemProps = {
 	id: string
 	title: string
