@@ -1,5 +1,16 @@
+import {prisma} from '@/db'
 import Image from 'next/image'
 import Link from 'next/link'
+
+async function createTodo(data: FormData) {
+	'use server'
+	const title = data.get('title')?.valueOf
+	if (typeof title !== 'string') {
+		throw new Error('Title is required')
+	}
+	await prisma.todo.create({data: {title, Complete: false}})
+	console.log('Server Action Execture')
+}
 
 export default function Page() {
 	return (
@@ -7,17 +18,17 @@ export default function Page() {
 			<header className="flex justify-between items-center mb-4">
 				<h1 className="text-2xl">Boobs </h1>
 			</header>
-			<form className="flex gap-2 flex-col">
+			<form action={createTodo} className="flex gap-2 flex-col">
 				<input
 					type="text"
-					placeholder="title"
+					name="title"
 					className="border border-blue-300 bg-transparent rounded px-2 py-1 focus-within:border-teal-700"
 				/>
 				<div className="flex gap-1 justify-end">
 					{/* Note that .. means to go back  */}
 					<Link href="..">
 						<button className="mybutton">Cancel</button>
-						<button className="mybutton">Submit</button>
+						<button className="mybutton">Create</button>
 					</Link>
 				</div>
 			</form>
