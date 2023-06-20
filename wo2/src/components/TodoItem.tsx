@@ -1,12 +1,14 @@
+'use client'
+
 /**
  * Here the props are being defined which are used in the function below
  */
-
 
 type TodoItemProps = {
 	id: string
 	title: string
 	Complete: boolean
+	toggleTodo: (id: string, complete: boolean) => void
 }
 
 /**
@@ -14,10 +16,16 @@ type TodoItemProps = {
  * sstrike trhough whe clicking the checkbox, You had problems because note that input is self closing
  * but label is not, sinec you need to wrap the text
  */
-export function TodoItem({id, title, Complete}: TodoItemProps) {
+export function TodoItem({id, title, Complete, toggleTodo}: TodoItemProps) {
 	return (
 		<li className="flex gap-1 items-center">
-			<input id={id} type="checkbox" className="cursor-pointer peer" />
+			<input
+				id={id}
+				type="checkbox"
+				className="cursor-pointer peer"
+				defaultChecked={Complete}
+				onChange={(e) => toggleTodo(id, e.target.checked)}
+			/>
 			<label
 				htmlFor={id}
 				className="cursor-pointer peer-checked:line-through peer-checked:text-blue-900"
